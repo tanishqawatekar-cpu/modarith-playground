@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #FFFCED;
+  --surface-beige: #E7D6BF;
+  --accent-chocolate: #684838;
+  --accent-dusty: #7C91AA;
+  --accent-navy: #172C45;
+  --highlight-butter: #F2D879;
+  --text-espresso: #30251F;
+}
+
+body {
+  background-color: #FFFCED;
+  color: #30251F;
+}
+
+/* Accessible focus ring across all interactive elements */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #172C45;
+  outline-offset: 2px;
+}
+
+/* Warm custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFCED;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9B59C;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #684838;
+}
+
+/* KaTeX overflow friendliness */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
